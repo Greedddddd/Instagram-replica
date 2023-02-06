@@ -1,3 +1,10 @@
+import { AiQutlineSearch, AiFillHome } from 'react-icons/ai'
+import { RiMessengerLine } from 'react-icons/ri'
+import { BsPlusSquare } from 'react-icons/bs'
+import { MdOutlineExplore } from 'react-icons/md'
+import { FiHeart } from 'react-icons/fi'
+
+
 export function Header() {
     return (
         <header className="header">
@@ -6,11 +13,17 @@ export function Header() {
 
                 <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" />
 
-                <div class="submit-line">
-                    <input type="text" />
-                     <button class="submit-lente" type="submit">
-                        <i class="fa fa-search"></i>
-                     </button>
+                <div class="input-fake">
+                    <AiQutlineSearch />
+                     <input />
+                </div>
+
+                <div>
+                    <AiFillHome />
+                    <RiMessengerLine />
+                    <BsPlusSquare />
+                    <MdOutlineExplore />
+                    <FiHeart />
                 </div>
 
             </div>
